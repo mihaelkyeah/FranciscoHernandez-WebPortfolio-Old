@@ -3,14 +3,29 @@
 
 'use strict';
 
-// var json_data = require('lang/lang.json');
 
-// console.log(json_data);
+function showText(lang) {
+    fetch('lang/lang.json').then(
+        response => {return response.json()}
+    ).then(
+        jotason => {
+            insertText(jotason.lang);
+        }
+    );
+}
 
-fetch('lang/lang.json').then(
-    response => {return response.json()}
-).then(
-    jotason => {
-        console.log(jotason);
-    }
-);
+function insertText(jotason) {
+    Object.keys(jotason).forEach(keyValue => {
+        let fields = document.querySelectorAll('.lang');
+        fields.forEach(field => {
+                console.log(field.getAttribute('key'));
+                if(field.getAttribute('key') == keyValue) {
+                    field.innerHTML = jotason[keyValue];
+                }
+            }
+        );
+        // console.log(jotason[keyValue]);
+        // console.log(keyValue);
+        // console.log(jotason.keyValue);
+    })
+} 
