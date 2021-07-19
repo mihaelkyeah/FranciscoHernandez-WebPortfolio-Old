@@ -1,31 +1,29 @@
-// $getJson('lang/lang.json', function() {
-// });
-
 'use strict';
+document.addEventListener("DOMContentLoaded", function(){ showText("es") });
 
+document.getElementById("lang_button_es").addEventListener("click", ()=>
+    { showText("es") }
+);
+document.getElementById("lang_button_en").addEventListener("click", ()=>
+    { showText("en") }
+);
 
-function showText(lang) {
+function showText(locale_str) {
     fetch('lang/lang.json').then(
         response => {return response.json()}
     ).then(
-        jotason => {
-            insertText(jotason.lang);
-        }
+        jsonFile => {insertText(jsonFile[locale_str])}
     );
 }
 
-function insertText(jotason) {
-    Object.keys(jotason).forEach(keyValue => {
+function insertText(jsonLang) {
+    Object.keys(jsonLang).forEach(keyValue => {
         let fields = document.querySelectorAll('.lang');
         fields.forEach(field => {
-                console.log(field.getAttribute('key'));
                 if(field.getAttribute('key') == keyValue) {
-                    field.innerHTML = jotason[keyValue];
+                    field.innerHTML = jsonLang[keyValue];
                 }
             }
         );
-        // console.log(jotason[keyValue]);
-        // console.log(keyValue);
-        // console.log(jotason.keyValue);
     })
-} 
+}

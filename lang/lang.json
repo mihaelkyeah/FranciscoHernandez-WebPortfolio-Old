@@ -1,11 +1,23 @@
 {
     "es":{
-        "index_title":"HOLAAAAAAAAAA",
-        "index_paragraph1": "SOSOSOROSOSOSROSOSOOO"
+        "index_h1_name":"Francisco Hernández",
+        "index_h2_description": "Estudiante de Desarrollo de Aplicaciones Informáticas",
+        "index_p_aboutme": "Estudio Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas (TUDAI) en la Universidad del Centro de Buenos Aires (UNICEN), sede Lobería. Soy músico con formación particular y autodidacta y ",
+        "index_h2_langs": "Idiomas",
+            "index_div_langs": "<p><b>Español:</b> Nativo</p><p><b>Inglés:</b> Bilingüe</p><p><b>Portugués:</b> Principiante",
+        "index_h2_skills": "Tecnologías",
+        "index_h2_prj": "Proyectos",
+        "index_h2_downloadCV": "Descargar CV"
     },
 
     "en":{
-        "index_title":"HELLOOOOOOOOO",
-        "index_paragraph1": "SOSOROSATION SOSOROSING"
+        "index_h1_name":"Francisco Hernández",
+        "index_h2_description": "Software Development Student",
+        "index_p_aboutme": "I am studying for an assistant's degree in software development at the UNICEN University in Lobería, Argentina. I am also a self-taught musician and etc etc",
+        "index_h2_langs": "World Languages",
+            "index_div_langs": "<p><b>Spanish:</b> Native</p><p><b>English:</b> Bilingual</p><p><b>Portuguese:</b> Beginner",
+        "index_h2_skills": "Skills",
+        "index_h2_prj": "Projects",
+        "index_h2_downloadCV": "Download CV/Résumé"
     }
 }
