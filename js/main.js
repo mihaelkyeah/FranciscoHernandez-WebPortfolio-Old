@@ -1,5 +1,5 @@
 'use strict';
-document.addEventListener("DOMContentLoaded", function(){ showText("es") });
+document.addEventListener("DOMContentLoaded", function(){ showText("en") });
 
 document.getElementById("lang_button_es").addEventListener("click", ()=>
     { showText("es") }

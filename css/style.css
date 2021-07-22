@@ -1,3 +1,53 @@
+.headerBanner {
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+    grid-template-rows: 0.25fr 0.75fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.mainContent {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.titleName {
+    display: block;
+    margin: auto;
+    height: 200px;
+    min-height: 100px;
+    max-height: 200px; 
+    text-align: center;
+    align-content: center;
+    grid-area: 2 / 2 / 2 / 3;
+}
+
+.titleNameHelper {
+    margin: auto;
+}
+
+.langMenu {
+    grid-area: 1 / 1 / 4 / 2;
+    padding: 2px;
+}
+
 .li-nav {
     list-style-type: none;
+    padding: 10px 10px;
+}
+
+.imgRow {
+    display: flex;
+}
+
+.imgColumn {
+    flex: auto;
+    padding: 5px;
+}
+
+.imgColumn img {
+    margin: 10px;
 }
