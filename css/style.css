@@ -1,7 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+:root {
+    --primary-color: 255,159,31;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800 !important;
+}
+
 .headerBanner {
     background-color: orange;
     display: grid;
-    grid-template-columns: 0.25fr 1fr 0.25fr;
+    grid-template-columns: 0.27fr 1fr 0.27fr;
     grid-template-rows: 0.25fr 0.75fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -29,6 +43,10 @@
     margin: auto;
 }
 
+.blackCatLogo {
+    grid-area: 2 / 3 / 2 / 3;
+}
+
 .langMenu {
     grid-area: 1 / 1 / 4 / 2;
     padding: 2px;
@@ -39,8 +57,14 @@
     padding: 10px 10px;
 }
 
+.skillsContainer {
+    background-image: linear-gradient(180deg,rgba(var(--primary-color),0.25),rgba(255,255,255,0),rgba(var(--primary-color),0.25));
+    padding: 25px 0px;
+}
+
 .imgRow {
     display: flex;
+    background-color: rgba(0,0,0,0.05);
 }
 
 .imgColumn {

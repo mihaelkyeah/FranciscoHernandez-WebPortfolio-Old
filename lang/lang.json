@@ -1,5 +1,6 @@
 {
     "es":{
+        "head_title": "Portafolio Web: Francisco Hernández",
         "index_h1_name":"Francisco Hernández",
         "index_h2_description": "Estudiante de Desarrollo de Aplicaciones Informáticas",
         "index_p_aboutme": "Estudio Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas (TUDAI) en la Universidad del Centro de Buenos Aires (UNICEN), sede Lobería. Soy músico con formación particular y autodidacta y ",
@@ -13,6 +14,7 @@
     },
 
     "en":{
+        "head_title": "Web Portfolio: Francisco Hernández",
         "index_h1_name":"Francisco Hernández",
         "index_h2_description": "Software Development Student",
         "index_p_aboutme": "I am studying for an assistant's degree in software development at the UNICEN University in Lobería, Argentina. I am also a self-taught musician and etc etc",
