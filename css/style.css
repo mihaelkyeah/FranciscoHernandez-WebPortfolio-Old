@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 
+/* === Variables === */
+
 :root {
     --primary-color: 255,159,31;
 }
+
+/* === Global style settings === */
 
 body {
     font-family: 'Poppins', sans-serif !important;
@@ -12,8 +16,23 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800 !important;
 }
 
+h1, h2, h3 {
+    line-height: 3rem !important;
+}
+
+/* === Custom classes === */
+
 .headerBanner {
-    background-color: orange;
+    /* background-color: orange; */
+    /* background-image: url("/img/background_squre_pattern_opaque.svg");
+    background-repeat: repeat; */
+
+    background-color: #eec990;
+    opacity: 0.8;
+    background-image: linear-gradient(30deg, #f49d1a 12%, transparent 6.25%, transparent 87%, #f49d1a 87.5%, #f49d1a), linear-gradient(150deg, #f49d1a 12%, transparent 12.5%, transparent 87%, #f49d1a 87.5%, #f49d1a), linear-gradient(30deg, #f49d1a 12%, transparent 12.5%, transparent 87%, #f49d1a 87.5%, #f49d1a), linear-gradient(150deg, #f49d1a 12%, transparent 12.5%, transparent 87%, #f49d1a 87.5%, #f49d1a), linear-gradient(60deg, #f49d1a77 25%, transparent 25.5%, transparent 75%, #f49d1a77 75%, #f49d1a77), linear-gradient(60deg, #f49d1a77 25%, transparent 25.5%, transparent 75%, #f49d1a77 75%, #f49d1a77);
+    background-size: 20px 35px;
+    background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+
     display: grid;
     grid-template-columns: 0.27fr 1fr 0.27fr;
     grid-template-rows: 0.25fr 0.75fr;
@@ -50,6 +69,18 @@ h1, h2, h3, h4, h5, h6 {
 .langMenu {
     grid-area: 1 / 1 / 4 / 2;
     padding: 2px;
+}
+
+.languagesContainer {
+    padding: 10px;
+    background-image: url("../img/background_continents-orange.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.languagesUl {
+    list-style: none;
+    line-height: 2rem;
 }
 
 .li-nav {
