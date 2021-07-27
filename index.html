@@ -10,35 +10,37 @@
 </head>
 <body>
     <header class="headerBanner">
-        <nav class="langMenu">
+        <div class="langMenu d-flex align-items-center">
             <ul class="li-nav">
                 <li><img src="img/flag_sp.svg" width="24px" height="16px"> <button class="translate" id="lang_button_es">Español</button></li>
                 <li><img src="img/flag_uk.svg" width="24px" height="16px"> <button class="translate" id="lang_button_en">English</button></li>
             </ul>
-        </nav>
+        </div>
         <div class="titleName" id="titleName">
             <div class="titleNameHelper">
-                <h1 class="lang" key="index_h1_name"></h1>
-                <h2 class="lang" key="index_h2_description"></h2>
+                <h1 class="lang" key="h1_name"></h1>
+                <h2 class="lang" key="h2_description"></h2>
             </div>
         </div>
         <div class="blackCatLogo" id="blackCatLogo">
             <img src="img/black_cat_logo_favicon.svg" width="150px">
         </div>
     </header>
+
     <div class="mainContent">
+
         <div class="personalInfo" id="personalInfo">
-            <p class="lang" key="index_p_aboutme"></p>
-            <h2 class="lang" key="index_h2_langs"></h2>
+            <p class="lang p_aboutMe" key="p_aboutme"></p>
+            <h2 class="lang" key="h2_langs"></h2>
                 <div class="languagesContainer">
                     <ul class="languagesUl">
-                        <li class="lang" key="index_ul_langs_li_es"><img src="/img/flag_sp.svg" width="24px" height="16px"></li>
-                        <li class="lang" key="index_ul_langs_li_en"></li>
-                        <li class="lang" key="index_ul_langs_li_pr"></li>
+                        <li class="lang" key="ul_langs_li_es"><img src="/img/flag_sp.svg" width="24px" height="16px"></li>
+                        <li class="lang" key="ul_langs_li_en"></li>
+                        <li class="lang" key="ul_langs_li_pr"></li>
                     </ul>
                 </div>
         </div>
-        <h2 class="lang" key="index_h2_skills"></h2>
+        <h2 class="lang" key="h2_skills"></h2>
         <div class="skillsContainer">
             <h3>Frontend</h3>
             <div class="imgRow" id="tech_skills_frontend">
@@ -86,11 +88,66 @@
                 </div>
             </div>
         </div>
-        <h2 class="lang" key="index_h2_prj"></h2>
-            <div class="tech_skills" id="tech_skills">
+        <h2 class="lang" key="h2_prj"></h2>
+
+        <div class="projectContainer" id="projectGallery">  
+
+            <div class="imgRow">
+
+                <div class="cardColumn">
+
+                    <div class="card">
+                        <img src="img/projectExample.png" class="card-img-top" alt="Project Example Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolores.</p>
+                            <a href="#" class="btn btn-primary">View project</a>
+                            <a href="#" class="btn btn-primary">View code</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cardColumn">
+
+                    <div class="card">
+                        <img src="img/projectExample.png" class="card-img-top" alt="Project Example Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolores.</p>
+                            <a href="#" class="btn btn-primary">View project</a>
+                            <a href="#" class="btn btn-primary">View code</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cardColumn">
+
+                    <div class="card">
+                        <img src="img/projectExample.png" class="card-img-top" alt="Project Example Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolores.</p>
+                            <a href="#" class="btn btn-primary">View project</a>
+                            <a href="#" class="btn btn-primary">View code</a>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-        <h2 class="lang" key="index_h2_downloadCV"></h2>
+
+        </div>
+
+        <h2 class="lang" key="h2_downloadCV"></h2>
+        <button class="lang btn btn-primary" key="button_downloadCV"></button>
+
     </div>
+    <footer class="customFooter">
+        <p>Copyright © Sosoroso Seserese 2021</p>
+        <p>All rights and lefts reserved</p>
+    </footer>
 
     <!-- ========== Scripts and dependencies ========== -->
 

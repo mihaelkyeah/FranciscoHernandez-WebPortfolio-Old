@@ -3,7 +3,8 @@
 /* === Variables === */
 
 :root {
-    --primary-color: 255,159,31;
+    /* --primary-color: 255,153,51; */
+    --primary-color: 51,153,255;
 }
 
 /* === Global style settings === */
@@ -23,15 +24,13 @@ h1, h2, h3 {
 /* === Custom classes === */
 
 .headerBanner {
-    /* background-color: orange; */
-    /* background-image: url("/img/background_squre_pattern_opaque.svg");
-    background-repeat: repeat; */
-
-    background-color: #eec990;
-    opacity: 0.8;
-    background-image: linear-gradient(30deg, #f49d1a 12%, transparent 6.25%, transparent 87%, #f49d1a 87.5%, #f49d1a), linear-gradient(150deg, #f49d1a 12%, transparent 12.5%, transparent 87%, #f49d1a 87.5%, #f49d1a), linear-gradient(30deg, #f49d1a 12%, transparent 12.5%, transparent 87%, #f49d1a 87.5%, #f49d1a), linear-gradient(150deg, #f49d1a 12%, transparent 12.5%, transparent 87%, #f49d1a 87.5%, #f49d1a), linear-gradient(60deg, #f49d1a77 25%, transparent 25.5%, transparent 75%, #f49d1a77 75%, #f49d1a77), linear-gradient(60deg, #f49d1a77 25%, transparent 25.5%, transparent 75%, #f49d1a77 75%, #f49d1a77);
-    background-size: 20px 35px;
-    background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+    
+    opacity: 1;
+    background-color: rgb(var(--primary-color));
+    background-image:  linear-gradient(30deg, #3399ff 12%, transparent 12.5%, transparent 87%, #3399ff 87.5%, #3399ff), linear-gradient(150deg, #3399ff 12%, transparent 12.5%, transparent 87%, #3399ff 87.5%, #3399ff), linear-gradient(30deg, #3399ff 12%, transparent 12.5%, transparent 87%, #3399ff 87.5%, #3399ff), linear-gradient(150deg, #3399ff 12%, transparent 12.5%, transparent 87%, #3399ff 87.5%, #3399ff), linear-gradient(60deg, #3399ff77 25%, transparent 25.5%, transparent 75%, #3399ff77 75%, #3399ff77), linear-gradient(60deg, #3399ff77 25%, transparent 25.5%, transparent 75%, #3399ff77 75%, #3399ff77);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    background-blend-mode: overlay;
 
     display: grid;
     grid-template-columns: 0.27fr 1fr 0.27fr;
@@ -40,10 +39,12 @@ h1, h2, h3 {
     grid-auto-flow: row;
 }
 
+
 .mainContent {
     align-content: center;
     align-items: center;
     text-align: center;
+    padding: 24px 0px;
 }
 
 
@@ -63,12 +64,18 @@ h1, h2, h3 {
 }
 
 .blackCatLogo {
+    text-align: center;
+    align-content: center;
     grid-area: 2 / 3 / 2 / 3;
 }
 
 .langMenu {
     grid-area: 1 / 1 / 4 / 2;
     padding: 2px;
+}
+
+.p_aboutMe {
+    margin: 0rem 2rem;
 }
 
 .languagesContainer {
@@ -105,4 +112,23 @@ h1, h2, h3 {
 
 .imgColumn img {
     margin: 10px;
+}
+
+.cardColumn {
+    flex: auto;
+    padding: 5px;
+}
+
+.cardColumn .card {
+    width: auto;
+    margin: 32px;
+}
+
+.customFooter {
+    background-color: rgb(var(--primary-color));
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
 }
