@@ -24,27 +24,21 @@ h1, h2, h3 {
 /* === Custom classes === */
 
 .headerBanner {
-    
     opacity: 1;
     background-color: rgb(var(--primary-color));
     background-image:  linear-gradient(30deg, #3399ff 12%, transparent 12.5%, transparent 87%, #3399ff 87.5%, #3399ff), linear-gradient(150deg, #3399ff 12%, transparent 12.5%, transparent 87%, #3399ff 87.5%, #3399ff), linear-gradient(30deg, #3399ff 12%, transparent 12.5%, transparent 87%, #3399ff 87.5%, #3399ff), linear-gradient(150deg, #3399ff 12%, transparent 12.5%, transparent 87%, #3399ff 87.5%, #3399ff), linear-gradient(60deg, #3399ff77 25%, transparent 25.5%, transparent 75%, #3399ff77 75%, #3399ff77), linear-gradient(60deg, #3399ff77 25%, transparent 25.5%, transparent 75%, #3399ff77 75%, #3399ff77);
-    background-size: 80px 140px;
     background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    background-size: 80px 140px;
     background-blend-mode: overlay;
-
-    display: grid;
-    grid-template-columns: 0.27fr 1fr 0.27fr;
-    grid-template-rows: 0.25fr 0.75fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
+    animation-name: header-background-scroll;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-
-.mainContent {
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 24px 0px;
+@keyframes header-background-scroll {
+    0% { background-position: top left 0%; }
+    100% { background-position: top left 50%; }
 }
 
 
@@ -56,7 +50,6 @@ h1, h2, h3 {
     max-height: 200px; 
     text-align: center;
     align-content: center;
-    grid-area: 2 / 2 / 2 / 3;
 }
 
 .titleNameHelper {
@@ -65,12 +58,10 @@ h1, h2, h3 {
 
 .blackCatLogo {
     text-align: center;
-    align-content: center;
-    grid-area: 2 / 3 / 2 / 3;
+    align-content: center;   
 }
 
 .langMenu {
-    grid-area: 1 / 1 / 4 / 2;
     padding: 2px;
 }
 
@@ -92,7 +83,7 @@ h1, h2, h3 {
 
 .li-nav {
     list-style-type: none;
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 .skillsContainer {
