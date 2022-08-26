@@ -12,6 +12,9 @@
 </head>
 
 <body>
+
+    <!-- Encabezado / Header -->
+
     <header class="headerBanner d-flex flex-row align-items-center justify-content-between">
         <div class="d-flex flex-column justify-content-center align-items-center px-5">
             <ul class="li-nav">
@@ -32,9 +35,34 @@
         </div>
     </header>
 
+    <!-- Contenido / Content -->
+
     <div class="d-flex flex-column flex-grow-1 align-items-center justify-content-around">
-        <h3 class="lang" key="h3_aboutme"></h3>
-        <p class="lang" key="p_aboutme"></p>
+        
+        <section id="aboutme">
+
+            <!-- Información básica / Basic info -->
+
+            <h3 class="lang text-center mb-2" key="h3_aboutme"></h3>
+            <p class="lang text-center mb-2" key="p_aboutme"></p>
+
+            <!-- Lenguajes / Languages -->
+
+            <div class="languagesContainer d-flex flex-row flex-grow-1 align-items-center justify-content-around">
+                
+                <div class="d-flex flex-column align-items-center justify-content-around">
+                    <h2 class="lang" key="h2_langs"></h2>
+                    <ul class="languagesUl">
+                        <li class="lang" key="ul_langs_li_es"></li>
+                        <li class="lang" key="ul_langs_li_en"></li>
+                        <li class="lang" key="ul_langs_li_pr"></li>
+                    </ul>
+                </div>
+
+            </div>
+        
+        </section>
+
     </div>
 
     <footer class="customFooter">
